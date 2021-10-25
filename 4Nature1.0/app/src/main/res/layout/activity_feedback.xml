@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen.Activities.Feedback">
+
+    <View
+        android:id="@+id/day_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/feedback"/>
+
+
+
+    <EditText
+        android:id="@+id/suggestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".8"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Have a suggestion?"
+        android:backgroundTint="#e0f2f1"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="100dp"
+        android:textColor="#607d8b"
+        android:textSize="18sp"
+
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send_suggestion"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+
+        android:backgroundTint="#FF018786"
+        android:text="SEND"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
